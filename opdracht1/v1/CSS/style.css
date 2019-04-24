@@ -1,0 +1,62 @@
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+table th {
+    text-align:left;
+    background-color: #3a6070;
+    color: #fff;
+    padding: 4px 30px 4px 8px;
+}
+
+
+table td{
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+/*.table-hover {
+    background-color: #e7edf0
+}
+*/
+.rij {
+        color: black;
+}
+
+#myInput {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.drag-handler {
+  width: 1.4em;
+  position: relative;
+  background-color: #E4E6EB;
+  background-image: linear-gradient(45deg, #E4E6EB, #E4E6EB 2px, #fff 2px, #fff 4px, #E4E6EB 4px, #E4E6EB 9px, #fff 9px, #fff 11px, #E4E6EB 11px, #E4E6EB 16px, #fff 16px, #fff 18px, #E4E6EB 18px, #E4E6EB 22px);
+  background-size: 10px 20px; 
+  cursor: move;
+  border-top: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+}
+
+.drag-handler:active {
+  background-image: linear-gradient(45deg, #bab86c, #bab86c 2px, #fff 2px, #fff 4px, #bab86c 4px, #bab86c 9px, #fff 9px, #fff 11px, #bab86c 11px, #bab86c 16px, #fff 16px, #fff 18px, #bab86c 18px, #bab86c 22px);
+  background-size: 10px 20px; 
+}
+
+.table__cell {
+  vertical-align: top;
+  padding: 3px 5px;

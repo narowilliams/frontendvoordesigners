@@ -1,17 +1,120 @@
-<html>
-  <head></head>
-  <body>
-    <h1>Opdracht 1 - versie 1</h1>
-    <p>
-      Hier komt de HTML van de interactieve demo te staan voor de eerste opdracht:
-      Ontwerp een user interface voor een gegeven use case.
-      Werk je ontwerp uit in HTML, CSS en Javascript om te kunnen testen in een browser.
-    </p>
-    <ol>
-      <li>Als ik een lijst films heb gevonden, wil ik leuke films kunnen opslaan om ze thuis te ...</li>
-      <li>In een lijst gevonden studentenhuizen wil ik details kunnen bekijken om te bepalen of de kamer geschikt is.</li>
       <li>In een verzameling muzieknummers wil ik de volgorde kunnen veranderen om een vette playlist te maken.</li>
-      <li>Als ik foto's zoek wil ik kunnen selecteren op kleur om verassende zoekresultaten te krijgen.</li>
-    </ol>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1><img src="img/92.png" alt="logo">Tracks</h1>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <div>
+    <table id="myTable" class="table table-hover">
+           <tr>
+            <th></th>
+            <th><a onclick="sortTable(0)">Naam<img src="img/updown.png" alt=""></a></th>
+            <th><a onclick="sortTable(1)">Artiest<img src="img/updown.png" alt=""></a></th>
+            <th><a onclick="sortTable(2)">Tijd<img src="img/updown.png" alt=""></a></th>
+            <th><a onclick="sortTable(3)">Album<img src="img/updown.png" alt=""></a></th>
+            <th><a onclick="sortTable(4)">Genre<img src="img/updown.png" alt=""></a></th>
+            <th><a onclick="sortTable(5)">Afgespeeld<img src="img/updown.png" alt=""></a></th>
+        </tr>
+        <tbody id="tableBody" >
+        <tr id="rij" draggable="true">
+            <td class="drag-handler"></td>
+            <td class="table__cell">Niet van mij</td>
+            <td>Jairzinho</td>
+            <td>3:16</td>
+            <td>Niet van mij</td>
+            <td>Hip-hop</td>
+            <td>13</td>
+        </tr>
+         <tr class="rij" draggable="true">
+            <td class="drag-handler"></td>
+            <td class="table__cell">Caged bird</td>
+            <td>J. Cole</td>
+            <td>3:43</td>
+            <td>Rotd</td>
+            <td>Hip-hop</td>
+            <td>92</td>
+        </tr>
+         <tr id="rij" draggable="true">
+            <td class="drag-handler"></td>
+            <td class="table__cell">Unforgettable</td>
+            <td>French Montana</td>
+            <td>3:02</td>
+            <td>Jungle Rules</td>
+            <td>Hip-hop</td>
+            <td>25</td>
+        </tr>
+         <tr draggable="true">
+            <td class="drag-handler"></td>
+            <td class="table__cell">Put On</td>
+            <td>Jeezy</td>
+            <td>4:03</td>
+            <td>The Recession</td>
+            <td>Hip-hop</td>
+            <td>3</td>
+        </tr>
+         <tr draggable="true">
+            <td class="drag-handler"></td>
+            <td class="table__cell">Feed me dope</td>
+            <td>Future</td>
+            <td>3:48</td>
+            <td>Super slimey</td>
+            <td>Hip-hop</td>
+            <td>18</td>
+        </tr>
+         <tr draggable="true">
+            <td class="drag-handler"></td>
+            <td class="table__cell">Run me dry</td>
+            <td>Bryson Tiller</td>
+            <td>2:58</td>
+            <td>True to self</td>
+            <td>Hip-hop</td>
+            <td>33</td>
+        </tr>
+         <tr draggable="true">
+            <td class="drag-handler"></td>
+            <td class="table__cell">Don't front</td>
+            <td>Bas</td>
+            <td>3:29</td>
+            <td>Don't front</td>
+            <td>Hip-hop</td>
+            <td>10</td>
+        </tr>
+         <tr draggable="true">
+            <td class="drag-handler"></td>
+            <td class="table__cell">Hengel</td>
+            <td>JoeyAK</td>
+            <td>3:45</td>
+            <td>Luitenant</td>
+            <td>Hip-hop</td>
+            <td>46</td>
+        </tr>
+         <tr draggable="true">
+            <td class="drag-handler"></td>
+            <td class="table__cell">Stop met typen</td>
+            <td>Equalz</td>
+            <td>3:12</td>
+            <td>Reloaded</td>
+            <td>Hip-hop</td>
+            <td>20</td>
+        </tr>
+         <tr draggable="true">
+            <td class="drag-handler"></td>
+            <td class="table__cell">In Amsterdam</td>
+            <td>Sevn Alias</td>
+            <td>2:40</td>
+            <td>Picasso</td>
+            <td>Hip-hop</td>
+            <td>52</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    
+     <script src="js/tracks.js"></script>
+</body>
 </html>
