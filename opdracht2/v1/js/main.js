@@ -26,3 +26,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+jQuery(function($){
+	$(document).keydown(function(e){
+		switch(e.keyCode){
+			case 37: {//left arrow
+				$('.ps_prev').trigger('click');
+				break;
+			}
+			case 39: {//right arrow
+				$('.ps_next').trigger('click');
+				break;
+			}
+		}
+		if(Math.abs(e.keyCode - 38) === 1){
+			e.preventDefault();
+		}
+	});
+});
